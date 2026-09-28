@@ -1,0 +1,76 @@
+/* body is the global page wrapper (WHAT IT IS).
+   It sets the default font, background coloire site (WHAT IT DOES).
+   This ensures a consistent visual style and meets the 4.5:1 contrast ratio for accessibility (WHAT IT MEANS). */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fafbfc;
+  color: #1f2933;
+}
+
+/* .site-header and footer are the semantic landmarks (WHAT IT IS).
+   They center the text and add 24px of paddIT DOES).
+   This provides clear structure to the page and ensures content isn't touching the screen edges (WHAT IT MEANS). */
+.site-header,
+footer {
+  padding: 24px;
+  text-align: center;
+}
+
+/* .site-header h1 is the main page heading
+   It removes the default browser margin and applies a specific blue color (WHAT IT DOES).
+   This creates a clear visual hierarchy andfor the photographer (WHAT IT MEANS). */
+.site-header h1 {
+  margin: 0;
+  color: #0b3d91;
+}
+
+/* .gallery is the grid container (WHAT IT I
+   display: grid creates the layout, and gap: 16px adds spacing between the photos (WHAT IT DOES).
+   repeat(auto-fit, minmax(240px, 1fr)) make
+   fit the screen, each at least 240px wide, so the gallery reflows
+   on any screen with no media query (WHAT I
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  padding: 24px;
+}
+
+/* .gallery .feature is the hero image wrapp
+   grid-column: span 2 forces the item to stretch across two grid columns (WHAT IT DOES).
+   This creates a featured "hero" photo thatrs to catch the viewer's eye (WHAT IT MEANS). */
+.gallery .feature {
+  grid-column: span 2; /* featured photo spans 2 columns */
+}
+
+/* .photo is the individual image container
+   It adds rounded corners, a white background, and a subtle shadow (WHAT IT DOES).
+   This makes each photograph look like a phrd" for a cleaner UI (WHAT IT MEANS). */
+.photo {
+  margin: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(11, 61, 145, 0.)
+}
+
+/* .photo img targets the actual images in the gallery (WHAT IT IS).
+   It sets a fixed height of 220px and uses ES).
+   This ensures all thumbnails are the same size and crop attractively without being squished or stretched (WHAT IT
+MEANS). */
+.photo img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* .photo figcaption is the descriptive text.
+   It adds padding and reduces the font size and color intensity (WHAT IT DOES).
+   This provides context for the photo withol image itself (WHAT IT MEANS). */
+.photo figcaption {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  color: #3e4c59;
+}
