@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcus Hagans — Photography Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- This is the header (WHAT IT IS).
+  It shows my name and a short tagline (WHAT IT DOES).
+  This tells people whose site this is and what I do (WHAT IT MEANS). -->
+  <header class="site-header">
+    <h1>Marcus Hagans</h1>
+    <p class="tagline">"Junior Web Developer Portfolio"</p>
+  </header>
+
+  <!-- This is the main area (WHAT IT IS).
+  It holds the gallery of my photos (WHAT IT DOES).
+  It separates the main content from the header and footer (WHAT IT MEANS). -->
+  <main>
+   <!-- This is the gallery container (WHAT IT IS).
+   It uses CSS Grid to put my photos in columns (WHAT IT DOES).
+   This makes the layout look like a professional portfolio (WHAT IT MEANS). -->
+    <section class="gallery" aria-label="Photo gallery">
+
+   <!-- This is a featured photo (WHAT IT IS).
+   Feature class makes it take up two columns (WHAT IT DOES).
+   This makes one photo stand out more than the others (WHAT IT MEANS). -->
+      <figure class="photo feature">
+        <img src="images/river-sunset.jpg" alt="A vibrant sunset reflecting orange and purple hues over a calm river.">
+        <figcaption>River Sunset</figcaption>
+      </figure>
+
+   <!-- Photos from Unsplash and Pexel (WHAT IT IS).
+    It groups an image and a caption together (WHAT IT DOES).
+    This keeps the description attached to the right picture (WHAT IT MEANS). -->
+      <figure class="photo">
+        <img src="images/birch-trees.jpg" alt="Tall white birch trees standing in a green forest.">
+        <figcaption>White Birches</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="images/city-skyline.jpg" alt="A city skyline with tall glass buildings and skyscrapers.">
+        <figcaption>City Skyline</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="images/desert-dunes.jpg" alt="Orange sand dunes under a clear blue sky.">
+        <figcaption>Desert Dunes</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="images/elderly-portrait.jpg" alt="A close up portrait of an elderly person.">
+        <figcaption>Life Stories</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="images/lavender-field.jpg" alt="Rows of purple lavender flowers in a sunlit field.">
+        <figcaption>Lavender Fields</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="images/milky-way.jpg" alt="The Milky Way stars in a dark night sky.">
+        <figcaption>Night Sky</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="images/modern-building.jpg" alt="A modern building with sharp edges and glass.">
+        <figcaption>Modern Design</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="images/ocean-waves.jpg" alt="Blue ocean waves crashing on a sandy beach.">
+        <figcaption>Ocean Waves</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img src="images/sunrise-blue-ridge.jpg" alt="A golden sunrise over the Blue Ridge mountains.">
+        <figcaption>Blue Ridge Sunrise</figcaption>
+      </figure>
+
+    </section>
+  </main>
+
+  <!-- This is the footer (WHAT IT IS).
+  It shows the copyright and my name (WHAT IT DOES).
+  It lets people know when the site was made (WHAT IT MEANS). -->
+  <footer>
+    <p>&copy; 2026 Marcus Hagans · Built with CSS Grid</p>
+  </footer>
+
+  <!-- This is the reflection paragraph (WHAT IT IS).
+   This explains what I learned during the assignment (WHAT IT DOES).
+   This shows what I understand about how this works and what I learned. (WHAT IT MEANS). -->
+  <p class="reflection">
+    <strong>Reflection:</strong> I’m still really new to all this CSS stuff, so figuring out CSS Grid felt like a little adventure. The hardest part was definitely minmax. I had no clue what it did at first, so I had to look it up just to understand why everyone keeps using it. Then I learned that when you mix minmax with things like auto-fit, the browser basically decides how many columns to make on its own. I didn’t have to tell it anything—it just did the math for me. I also had to learn how to actually get the pictures onto the page by following the instructions step by step. Once I finally got them showing up, I had to look up how to make one photo stretch across two columns using grid-column: span 2. I realized this is the same kind of layout you see on Pinterest, where everything moves around when you resize the window.
+  </p>
+
+</body>
+</html>
