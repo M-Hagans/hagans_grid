@@ -1,0 +1,72 @@
+/* Base styles (WHAT IT IS).
+   Sets the basic look of the page like fonts and colors (WHAT IT DOES).
+   Makes the page clean and easy to read (WHAT IT MEANS). */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fafbfc;
+  color: #1f2933;
+}
+
+/* Header and Footer styles (WHAT IT IS).
+   Adds spacing and centers the text (WHAT IT DOES).
+   Keeps the top and bottom of the page organized (WHAT IT MEANS). */
+.site-header,
+footer {
+  padding: 24px;
+  text-align: center;
+}
+
+.site-header h1 {
+  margin: 0;
+  color: #0b3d91;
+}
+
+/* The Grid Container (WHAT IT IS).
+   Lays out the photos in rows and columns (WHAT IT DOES).
+   repeat(auto-fit, minmax(240px, 1fr)) makes as many equal columns as fit,
+   each at least 240px wide, so it adjusts for 1200px and 360px
+   widths without media queries (WHAT IT MEANS). */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  padding: 24px;
+}
+
+/* Featured Photo (WHAT IT IS).
+   Makes one photo stretch across two columns (WHAT IT DOES).
+   Highlights the most important image in the gallery (WHAT IT MEANS). */
+.gallery .feature {
+  grid-column: span 2;
+}
+
+/* Photo Box styles (WHAT IT IS).
+   Adds rounded corners and a shadow to each photo box (WHAT IT DOES).
+   Makes the photos look like a professional gallery (WHAT IT MEANS). */
+.photo {
+  margin: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(11, 61, 145, 0.06);
+}
+
+/* Image styling (WHAT IT IS).
+   Forces the image to fill the box and crop instead of squishing (WHAT IT DOES).
+   object-fit: cover ensures the photo looks great regardless of size (WHAT IT MEANS). */
+.photo img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Caption styling (WHAT IT IS).
+   Adds padding and color to the text under the photo (WHAT IT DOES).
+   Makes the labels clear and subtle (WHAT IT MEANS). */
+.photo figcaption {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  color: #3e4c59;
+}
